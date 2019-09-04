@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery HW</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Added a link to our external stylesheet-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <!-- Full Container -->
+  <div class="container-fluid">
+
+    <!-- Jumbotron  -->
+    <div class="container-fluid">
+
+      <!-- Debt Card  -->
+      <div class="container-fluid">
+
+        <div class="card">
+          <h1 class="card-header">Current Debt:</h1>
+          <div class="card-body">
+              <h1 id="currentDebt"></h1>
+              <hr>
+        </div>
+
+        <div class="card">
+          <h1 class="card-header">Current Funds:</h1>
+            <div class="card-body">
+              <h1 id="currentFunds"></h1>
+              <hr>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Win Alert Card
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">You Won!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+          that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div>
+
+    <!-<!- Lose Alert Card -->
+      <!-- <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">You Lost!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+          that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div> -->
+
+  </div>
+
+  <!-- Buttons -->
+  <div class="container-fluid">
+      <img id="button1" src="https://image.flaticon.com/icons/png/512/1954/1954876.png" class="rounded float-center operators" alt="Parents">
+      <img id="button2" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/office-desk-1455402-1231146.png" class="rounded float-center operators" alt="Job">
+      <img id="button3" src="https://image.flaticon.com/icons/png/512/90/90460.png" class="rounded float-center operators" alt="2nd Job">
+      <img id="button4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTRAuuUzHf7PWHU63H9mzTzdZ6xvZNMIldkZ8W_d7xVFHBWaWJOg" class="rounded float-center operators" alt="Savings">
+  </div>
+
+  <!-- Controls -->
+  <div class="container-fluid">
+
+    <div id="cntCont" class="card-body"></div>
+      <div id="controls" class="btn-group" role="group" aria-label="Basic example">
+        <div id="button-start" class="btn btn-dark clear" value="start"><span> Start </span></div>
+        <div id="wins" class="btn btn-primary number" value="1"><span >Wins:  </span></div>
+        <div id="losses" class="btn btn-primary number" value="2"><span> Losses:  </span></div>
+        <div id="tries" class="btn btn-primary number" value="3"><span> Tries:  </span></div>
+        <div id="button-restart" class="btn btn-danger operator" value="plus"><span> Restart! </span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Script Tags -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+  <div id="jqueryTags">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>
