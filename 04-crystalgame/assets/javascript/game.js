@@ -1,28 +1,38 @@
 $(document).ready(function () {
 
-    var fundsNumber = 0;
-    var debtNumber = 0;
-
-    function debtNumber() {
-        return  Math.floor(Math.random() * 120000) + 19000;
-    }
-
-    function buttonNumber() {
-        return Math.floor(Math.random() * 1200) + 100; 
-    }
-
-    function gameOn() {
+    function gameClear() {
         fundsNumber = 0;
-        debtNumber = debtNumber();
-        buttonNumber = buttonNumber();
+        debtNumber = 0;
 
         $("#funds-area").text("$ " + fundsNumber);
-        $("#debt-area").text("-$ " + debtNumber);
-
-        console.log("Debt: -$ " + debtNumber);
-        console.log("Debt: $ " + fundsNumber);
+        $("#debt-area").text("$ " + debtNumber);
     }
-    gameOn();
+    gameClear();
+
+    function gameOn() {
+
+
+        function debt() {
+
+                debtNumber = Math.floor(Math.random() * 120000) + 19000;
+                $("#debt-area").text("-$ " + debtNumber);
+
+                console.log("Debt: -$ " + debtNumber);
+        }
+        debt();
+
+
+        function button() {
+                buttonNumber = Math.floor(Math.random() * 1200) + 100;
+        }
+        button();
+
+    }    
+
+    $("#start-button").on("click", function () {
+        gameOn();
+    })
+
 
     $(".funds").on("click", function () {
 
@@ -37,10 +47,6 @@ $(document).ready(function () {
         else if (fundsNumber > debtNumber) {
             alert("You snooze, you lose!");
         }
-    })
-
-    $(".start-button").on("click", function () {
-        gameOn();
     })
 
 })
